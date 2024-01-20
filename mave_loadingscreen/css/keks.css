@@ -1,0 +1,268 @@
+body {
+  background-color: rgb(37, 37, 37);
+  overflow-y:hidden;
+	overflow-x:hidden;
+	user-select: none;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100);
+
+
+#loader
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#loader .loading-wrap
+{
+  border-radius: 50px;
+  overflow: hidden;
+  height: 30px;
+  background-color: rgba(25,25,25, 0.8);
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  margin-top: 48%;
+  overflow: hidden;
+}
+
+
+
+#loader .loading-ball
+{
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 50px;
+  background: linear-gradient(10deg, #fc00ff, #00dbde);
+  background-size: 350% 350%;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: move 4s infinite ease-in-out;
+  -moz-animation: move 4s infinite ease-in-out;
+  -o-animation: move 4s infinite ease-in-out;
+  -ms-animation: move 4s infinite ease-in-out;
+  animation: move 4s infinite ease-in-out
+}
+
+#loader .loading-text
+{
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  color: #FFF;
+  font-size: 13px;
+  opacity: 0.5;
+  line-height: 30px
+}
+
+#particle {
+  z-index: 9999;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+#logo {
+  font-family: sans-serif;
+  font-size: 35px;
+  color: #ffff;
+  font-weight: bold;
+  position:absolute;
+  opacity: 0.5;
+  margin-top: 45%;
+  margin-left: 42%;
+}
+
+#precent {
+  font-family: sans-serif;
+  font-size: 25px;
+  color: #ffff;
+  font-weight: bold;
+  position:absolute;
+  opacity: 0.4;
+  margin-top: 46.3%;
+  margin-left: 80%;
+}
+
+#info {
+  font-family: sans-serif;
+  font-size: 10px;
+  color: #ffff;
+  font-weight: 400;
+  z-index: 9998;
+  position: absolute;
+  opacity: 0.2;
+  margin-top: 50%;
+  margin-left: 42%;
+
+}
+
+#title {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2vh;
+  top: 0.6vh;
+  left: 5vh;
+  color: white;
+}
+
+.pasek {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  width: 40vh;
+  height: 3vh;
+  left: 4vh;
+  top: 90.2vh;
+  color: white;
+  border-radius: 20vh;
+  background: #1b1b1b;
+}
+
+.loader-container {
+  font-size: 10px;
+  position: relative;
+  top: 84vh;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+.loader-1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin: -25px auto 0;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 50%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 50%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 50%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 50%);
+  position: relative;
+  -webkit-animation: loader-1 1.5s infinite linear;
+  animation: loader-1 1.5s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.loader-1:before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  border-radius: 100% 0 0 0;
+}
+
+.loader-1:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(10deg, #073d6e, #3374a8);
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-animation: 14s infinite ease-in-out;
+  -moz-animation: 14s infinite ease-in-out;
+  -o-animation: 14s infinite ease-in-out;
+  -ms-animation: 14s infinite ease-in-out;
+  animation: 14s infinite ease-in-out
+}
+
+@-webkit-keyframes loader-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move
+{
+  0% {
+      right: 100%;
+  }
+  50% {
+      right: 25%;
+      left: 25%;
+      opacity: 1
+
+  }
+  100% {
+      right: 0%;
+      left: 100%
+  }
+}
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
